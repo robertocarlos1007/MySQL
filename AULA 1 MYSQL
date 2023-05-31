@@ -1,0 +1,23 @@
+# MySQL
+use Escola;
+create table aluno(
+matricula integer,
+nome varchar(100),
+primary key (matricula));
+
+insert into aluno (matricula, nome)   #into é opcional!
+values (123, 'José Silva')
+insert aluno values(345,'Ana Julia');    #Insert serve para inserir valores para na tabela!
+insert aluno values(456,'Ana Silva');
+insert aluno values(567,'Ana Clara');
+
+describe aluno #serve para verificar as colunas 
+
+SELECT matricula, nome from aluno; #serve para exibir as colunas #separar as colunas por virgulas
+                                  #usa o FROM e o nome da tabela!	
+
+SELECT * from aluno; #serve para mostrar todas as colunas!
+
+update aluno #update serve para alterar um valor
+set nome = 'Ana Rita'
+where matricula = 345 #where = onde
